@@ -1,5 +1,5 @@
 /*
- * language.c: the silly language definition
+ * language.c: a silly language definition
  *
  * Copyright (C) 2014 Bryance Oyang
  */

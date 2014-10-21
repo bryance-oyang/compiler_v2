@@ -1,5 +1,5 @@
 /*
- * compiler.c: the stupid compiler
+ * compiler.c: a dumb and simple compiler
  *
  * Copyright (C) 2014 Bryance Oyang
  */
