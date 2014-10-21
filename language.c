@@ -32,6 +32,7 @@ void sub();
 void mul();
 void div();
 
+/* compile the program and output assembly code */
 void compile()
 {
 	while (statement(NO_F_EVAL));
@@ -132,8 +133,10 @@ void sub()
 		error("sub: expected statement");
 	}
 
+	match(')');
+
 	print("subq\t%%rax, %%rbx");
-	print("mvoq\t%%rbx, %%rax");
+	print("movq\t%%rbx, %%rax");
 
 	flush();
 }
@@ -177,5 +180,6 @@ void div()
 
 	print("movq\t%%rax, %%rcx");
 	print("movq\t%%rbx, %%rax");
+	print("cqo");
 	print("idivq\t%%rcx");
 }

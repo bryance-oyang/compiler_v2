@@ -40,6 +40,7 @@ int main()
 	int a;
 	FILE *gcc;
 
+	/* hardcoded input/output files */
 	source = fopen("src/source.b", "r");
 	as = fopen("src/asm.s", "w");
 	if (source == NULL || as == NULL)
